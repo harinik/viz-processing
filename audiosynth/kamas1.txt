@@ -1,0 +1,14 @@
+S , , , S , N2 , D2 , P , , m1 g3 , m1 , , , , , g3 , m1 , P , D2 , N2 , |
+S , , R2 N2 , , S D2 , , N2 P , , D2 m1 , , P m1 , , g3 m1 , , P D2 , , N2 |
+S , R2 , S N2 N2 , S , N2 D2 D2 , N2 , D2 P P , D2 , m1 g3 s m1 , g3 m1 P D2 N2 |
+S R2 S N2 S , , , N2 S N2 D2 N2 , , , D2 N2 D2 P D2 , , , P D2 P m1 P , , , |
+s s s s m1 m1 m1 m1 P P P P D2 D2 D2 D2 N2 S N2 S N2 , D2 P D2 P m1 g3 m1 P D2 N2 |
+D2 S N2 D2 P m1 g3 m1 P , , , P D2 N2 D2 P m1 g3 g3 m1 , , , P N2 D2 N2 D2 P D2 N2 |
+S , , , , , S N2 N2 D2 D2 P P m1 m1 g3 m1 , , , , , P D2 N2 D2 m1 g3 m1 P D2 N2 |
+S M1 G3 S S , S , S R2 S S N2 , N2 , N2 S N2 D2 D2 , D2 , P D2 P m1 P , P , |
+s m1 , m1 g3 P , P m1 D2 , D2 P N2 , N2 D2 R2 , R2 N2 S , S N2 S N2 D2 P , , , |
+m1 , P m1 P , D2 P D2 , N2 D2 N2 , S N2 S , R2 S R2 , S N2 S R2 S , N2 D2 P m1 |
+g3 m1 P D2 N2 S N2 R2 S , , , S R2 N2 S D2 N2 P D2 m1 , , , D2 P m1 g3 m1 P D2 N2 |
+S R2 S , N2 D2 N2 , S N2 D2 , P , , , P D2 N2 , D2 P m1 , P m1 g3 , m1 , , , |
+m1 g3 m1 , P m1 P , D2 P D2 , N2 D2 N2 , S R2 S , N2 D2 N2 , S N2 D2 , m1 P D2 , |
+S , , , S , N2 , D2 , P , , m1 g3 , m1 , , , , , g3 , m1 , P , D2 , N2 , |
