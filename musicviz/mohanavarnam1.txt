@@ -1,0 +1,16 @@
+g3 , g3 , r2 , , , s s r2 r2 g3 g3 r2 r2 s r2 g3 r2 s r2 s d2 s r2 g3 P g3 r2 s r2 
+g3 P g3 g3 r2 s r2 g3 r2 r2 s d2 s r2 g3 r2 g3 P g3 P D2 P D2 S D2 D2 P g3 D2 P g3 r2 
+g3 , g3 , P , , , g3 g3 P P D2 D2 P , D2 S D2 D2 P g3 D2 P D2 g3 D2 P g3 r2 s r2 
+g3 g3 P P D2 P D2 S D2 S R2 S G3 R2 , S D2 S R2 S , D2 P D2 S D2 , P g3 r2 s r2 
+g3 , r2 g3 r2 s r2 , s r2 s g3 r2 g3 s r2 s d2 s r2 g3 r2 g3 P g3 P D2 , P , , , 
+g3 P D2 P D2 S R2 G3 R2 , G3 S , R2 D2 , S P , D2 S R2 G3 S , D2 P , g3 r2 s r2 
+g3 , g3 , g3 P g3 r2 r2 g3 P g3 P , , , g3 g3 D2 D2 P , g3 g3 D2 P g3 P g3 r2 s r2 
+g3 , , , r2 , s , r2 , , , d2 , , , r2 , d2 , s , , , r2 , , , g3 , r2 , 
+g3 , g3 , g3 P g3 r2 r2 g3 P g3 P , , , g3 g3 D2 D2 P , g3 g3 D2 P g3 P g3 r2 s r2 
+g3 , g3 r2 g3 r2 s r2 g3 , g3 p d2 d2 s r2 g3 , g3 g3 D2 P g3 r2 g3 , g3 S D2 P g3 r2 
+g3 , g3 , g3 P g3 r2 r2 g3 P g3 P , , , g3 g3 D2 D2 P , g3 g3 D2 P g3 P g3 r2 s r2 
+P , D2 D2 P , g3 r2 s , r2 g3 r2 , s d2 s , r2 g3 P , D2 , S S , D2 P , g3 r2 
+g3 , g3 , g3 P g3 r2 r2 g3 P g3 P , , , g3 g3 D2 D2 P , g3 g3 D2 P g3 P g3 r2 s r2 
+S , R2 G3 R2 S R2 S D2 S D2 P g3 r2 s r2 s , , , s , s s r2 r2 g3 g3 P P D2 D2 
+S R2 G3 R2 G3 R2 D2 S R2 S R2 S P D2 S D2 S D2 g3 P D2 P D2 P R2 S D2 P g3 r2 s r2 
+g3 , g3 , g3 P g3 r2 r2 g3 P g3 P , , , g3 g3 D2 D2 P , g3 g3 D2 P g3 P g3 r2 s r2 
