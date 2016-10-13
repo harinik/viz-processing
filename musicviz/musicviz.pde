@@ -106,7 +106,6 @@ void draw() {
     renderRandomCurves(c);
     // renderCurves(c, 0, height);
     // renderNotesOnCircle(c);
-    save("mohanam-rnd.jpg");
     done = true; // done, don't do anything on subsequent calls to draw.
   }
 }
