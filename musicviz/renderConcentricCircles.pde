@@ -5,6 +5,7 @@
 * http://www.harinik.com/Portfolio/Musical-Art/i-kB3rjZQ/A
 */
 void renderConcentricCircles(Composition comp) {
+  background(255);
   float cx = width / 2;
   float cy = height / 2;
   // starting radius.

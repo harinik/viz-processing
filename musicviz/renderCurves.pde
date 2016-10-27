@@ -7,6 +7,7 @@
 * -- when yband = height / compostion length: http://www.harinik.com/Portfolio/Musical-Art/i-pS4V9nz/A
 */
 void renderCurves(Composition comp, float ystart, float yband) {
+  background(0);
   final float xband = width / (comp.numBeats * 4.0);
   float x = xband/2.0, y = 0;
 

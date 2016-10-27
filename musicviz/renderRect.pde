@@ -8,6 +8,7 @@
 * Example: http://www.harinik.com/Portfolio/Musical-Art/i-F6GK2M2/A
 */
 void renderRect(Composition comp, color base, boolean withGradient) { 
+  background(0);
   final int steps = 4;
   int x = 0;
   int y = 0;

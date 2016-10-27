@@ -2,9 +2,9 @@ HashMap<String, Float> nmap; // map representing the notes and their relative li
 HashMap<String, Float> thetamap; // map representing the notes and their relative positions on a circle (in terms of the angle).
 final String SCALE = "p,d1,d2,d3,n3,s,r1,r2,r3,g3,m1,m2,P,D1,D2,D3,N3,S,R1,R2,R3,G3,M1,M2";
 /** 
-* Reads notes from the specified scale and stores state relevant to the rendering.
-* This implicitly assumes the Carnatic music scale.
-*/
+ * Reads notes from the specified scale and stores state relevant to the rendering.
+ * This implicitly assumes the Carnatic music scale.
+ */
 void loadNotes() {
   nmap = new HashMap<String, Float>();
   thetamap = new HashMap<String, Float>();
@@ -32,7 +32,4 @@ void loadNotes() {
   thetamap.put("N1", thetamap.get("D2"));
   thetamap.put("n2", thetamap.get("d3"));
   thetamap.put("N2", thetamap.get("D3"));
-
-  println("nmap: " + nmap);
-  println("thetamap: " + thetamap);
 }

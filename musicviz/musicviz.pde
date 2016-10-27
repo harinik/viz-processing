@@ -88,24 +88,41 @@ Composition c;
 boolean done = false; // indicates if we're done visualizing this composition.
 
 void setup() {
-  size(400, 200);
+  size(200, 200);
   // load all the notes in the scale and store whatever state is necessary.
   loadNotes();
   background(0);
   c = new Composition("mohanavarnam1.txt", 8);
   // resize the canvas depending on the composition.
   surface.setResizable(true);
-  surface.setSize(c.getWidth(), c.getHeight(1.5));
+  surface.setSize(c.getWidth(), c.getHeight(2.0));
 }
 
 void draw() {
-  if (!done) {
-    // TODO: trigger different visualization based on key pressed. For now, uncomment one of the render fns. 
-    //renderConcentricCircles(c);
-    //renderRect(c, color(0, 255, 255), false);
+  // all code is in keyPressed - this is here only to ensure keyPressed
+  // listens for key presses.
+}
+
+void keyPressed() {
+  switch(key) {
+  case 's':
+    // TODO: fix spiral params relative to canvas size.
+    renderSpiral(c);
+    break;
+  case 'c':
+    renderConcentricCircles(c);
+    break;
+  case 'u':
+    renderCurves(c, 0, height);
+    break;
+  case 'r':
+    renderRect(c, color(128, 128, 128), false);
+    break;
+  case 'o':
+    renderNotesOnCircle(c);
+    break;
+  case 'n':
     renderRandomCurves(c);
-    // renderCurves(c, 0, height);
-    // renderNotesOnCircle(c);
-    done = true; // done, don't do anything on subsequent calls to draw.
+    break;
   }
 }

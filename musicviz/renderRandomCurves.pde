@@ -4,6 +4,7 @@
 * Example: http://www.harinik.com/Portfolio/Musical-Art/i-MHbNVbj/A
 */
 void renderRandomCurves(Composition comp) {
+  background(255);
   drawRect(0, 0, width, height, 255);
   for (int l = 0; l < comp.compLines.length; l++) {
     beginShape();

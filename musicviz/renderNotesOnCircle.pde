@@ -4,6 +4,7 @@
 * Example: http://www.harinik.com/Portfolio/Musical-Art/i-wNGNK95/A
 */
 void renderNotesOnCircle(Composition comp) {
+  background(0);
   float cx = width / 2;
   float cy = height / 2;
   float d = min(width, height);
