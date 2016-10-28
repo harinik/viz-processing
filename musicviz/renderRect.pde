@@ -7,11 +7,12 @@
 * on the number of beats of the composition and the height represents the number of lines.
 * Example: http://www.harinik.com/Portfolio/Musical-Art/i-F6GK2M2/A
 */
-void renderRect(Composition comp, color base, boolean withGradient) { 
+void renderRect(Composition comp, boolean withGradient) { 
   background(0);
   final int steps = 4;
   int x = 0;
   int y = 0;
+  color base = color(255);
   color prevCol = 0;
   for (int l = 0; l < comp.compLines.length; l++) {
     String[] cs = comp.compLines[l].split(" ");

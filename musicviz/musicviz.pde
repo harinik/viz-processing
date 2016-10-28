@@ -85,7 +85,6 @@ class Composition {
 };
 
 Composition c;
-boolean done = false; // indicates if we're done visualizing this composition.
 
 void setup() {
   size(200, 200);
@@ -95,19 +94,18 @@ void setup() {
   c = new Composition("mohanavarnam1.txt", 8);
   // resize the canvas depending on the composition.
   surface.setResizable(true);
-  surface.setSize(c.getWidth(), c.getHeight(2.0));
+  surface.setSize(c.getWidth(), c.getHeight(1.5));
 }
 
 void draw() {
-  // all code is in keyPressed - this is here only to ensure keyPressed
+  // all code is in keyPressed - this is only here to ensure keyPressed
   // listens for key presses.
 }
 
 void keyPressed() {
   switch(key) {
-  case 's':
-    // TODO: fix spiral params relative to canvas size.
-    renderSpiral(c);
+  case 'h':
+    renderHarmonicCurves(c);
     break;
   case 'c':
     renderConcentricCircles(c);
@@ -116,7 +114,7 @@ void keyPressed() {
     renderCurves(c, 0, height);
     break;
   case 'r':
-    renderRect(c, color(128, 128, 128), false);
+    renderRect(c, false);
     break;
   case 'o':
     renderNotesOnCircle(c);
