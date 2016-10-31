@@ -1,9 +1,9 @@
 /**
-* Visualizes the composition in a series of concentric circles. 
-* Each concentric circle represents a line in the composition.
-* For an example, see: 
-* http://www.harinik.com/Portfolio/Musical-Art/i-kB3rjZQ/A
-*/
+ * Visualizes the composition in a series of concentric circles. 
+ * Each concentric circle represents a line in the composition.
+ * For an example, see: 
+ * http://www.harinik.com/Portfolio/Musical-Art/i-kB3rjZQ/A
+ */
 void renderConcentricCircles(Composition comp) {
   background(255);
   float cx = width / 2;
@@ -12,7 +12,6 @@ void renderConcentricCircles(Composition comp) {
   float r = min(cx, cy) - 10;
   // dr indicates how much to change the radius for each line.
   float dr = r / comp.getLength();
-  drawRect(0, 0, width, height, 255);
   // choose a random base color
   color base = color(random(255), random(255), random(255));
   drawCircle(cx, cy, 2*r, base, 50 /*alpha*/);

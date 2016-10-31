@@ -16,8 +16,8 @@ void drawLine(float sx, float sy, float ex, float ey, color c) {
   line(sx, sy, ex, ey);
 }
 
-void drawRect(float x, float y, float w, float h, color c) {
-  fill(c);
+void drawRect(float x, float y, float w, float h, color c, int alpha) {
+  fill(c, alpha);
   noStroke();
   rect(x, y, w, h);
 }

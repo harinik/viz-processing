@@ -91,7 +91,7 @@ void setup() {
   // load all the notes in the scale and store whatever state is necessary.
   loadNotes();
   background(0);
-  c = new Composition("mohanavarnam1.txt", 8);
+  c = new Composition("kalyani1.txt", 14);
   // resize the canvas depending on the composition.
   surface.setResizable(true);
   surface.setSize(c.getWidth(), c.getHeight(1.5));

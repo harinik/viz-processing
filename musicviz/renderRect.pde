@@ -8,7 +8,7 @@
 * Example: http://www.harinik.com/Portfolio/Musical-Art/i-F6GK2M2/A
 */
 void renderRect(Composition comp, boolean withGradient) { 
-  background(0);
+  background(128);
   final int steps = 4;
   int x = 0;
   int y = 0;
@@ -28,12 +28,12 @@ void renderRect(Composition comp, boolean withGradient) {
         for (int i = 0; i < steps; i++) {
           float t = map(i, 0, steps, 0.0, 1.0);
           color intCol = lerpColor(prevCol, col, t);
-          drawRect(x, y, (XSZ/steps), YSZ, intCol);
+          drawRect(x, y, (XSZ/steps), YSZ, intCol, 128);
           prevCol = intCol;
           x = x + (XSZ/steps);
         }
       } else {
-        drawRect(x, y, XSZ, YSZ, col);
+        drawRect(x, y, XSZ, YSZ, col, 255);
         x = x + XSZ;
       }
     }

@@ -30,10 +30,7 @@ void renderHarmonicCurves(Composition comp) {
         continue;
       }
       color col = getColorFromBase(base, nmap.get(note));
-      ellipseMode(CENTER);
-      stroke(col);
-      fill(col);
-      ellipse(getX(cx, n), getY(cy, n), 10, 10);
+      drawCircle(getX(cx, n), getY(cy, n), 10, col, 255);
       n++;
     }
   }
@@ -61,9 +58,8 @@ void renderHarmonicCurves(Composition comp) {
 
 // Returns the x coord on the spiral correspond to the note number.
 float getX(int origX, int noteNum) {
-  return origX + 0.6 * noteNum * (height / (float) width) * sin(noteNum/10.0);
+  return origX + 0.6 * noteNum * (height / (float) width) * sin(noteNum/8.0);
 }
-
 // Returns the y coord on the spiral correspond to the note number.
 float getY(int origY, int noteNum) {
   return origY + 0.4 * noteNum * (height / (float) width) * cos(noteNum/4.0);
