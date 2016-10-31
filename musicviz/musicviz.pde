@@ -19,11 +19,13 @@ import java.util.Map;
  * in the composition. 
  */
 class Composition {
+  String compName;
   String compFileName;
   int numBeats;
   String[] compLines;
 
-  Composition(String compFileName, int numBeats) {
+  Composition(String name, String compFileName, int numBeats) {
+    this.compName = name;
     this.compFileName = compFileName;
     // Multiply by 4 since there are typically 4 notes per beat in Carnatic music.
     this.numBeats = numBeats * 4;
@@ -66,6 +68,7 @@ class Composition {
 };
 
 Composition c;
+char prevKey, currKey;
 
 void setup() {
   // use a fixed canvas size with 3:2 ratio so overlaying on digital images is easier.
@@ -74,7 +77,7 @@ void setup() {
   // load all the notes in the scale and store whatever state is necessary.
   loadNotes();
   background(0);
-  c = new Composition("mohanavarnam1.txt", 8);
+  c = new Composition("kalyani", "kalyani1.txt", 14);
 }
 
 void draw() {
@@ -83,6 +86,8 @@ void draw() {
 }
 
 void keyPressed() {
+  prevKey = currKey;
+  currKey = key;
   switch(key) {
   case 'h':
     renderHarmonicCurves(c);
@@ -101,6 +106,10 @@ void keyPressed() {
     break;
   case 'n':
     renderRandomCurves(c);
+    break;
+  case 's':
+    String filename = generateFileName(c.compName, prevKey);
+    save(filename);
     break;
   }
 }

@@ -1,7 +1,6 @@
 /**
  * Helper functions to visualize compositions.
  */
-
 void drawCircle(float x, float y, float d, color c, int alpha) {
   stroke(c);
   ellipseMode(CENTER);
@@ -38,4 +37,9 @@ void drawCurve(float nextX, float nextY, color col, float alpha) {
 
 color getColorFromBase(color base, float mult) {
   return color(int(red(base) * mult), int(green(base) * mult), int(blue(base) * mult));
+}
+
+final String imgBasePath = "/home/harini/images";
+String generateFileName(String prefix, char mode) {
+  return imgBasePath + "/" + prefix + "-" + mode + "-" + millis() + ".jpg";
 }
