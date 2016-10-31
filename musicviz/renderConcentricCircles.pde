@@ -11,7 +11,7 @@ void renderConcentricCircles(Composition comp) {
   // starting radius.
   float r = min(cx, cy) - 10;
   // dr indicates how much to change the radius for each line.
-  float dr = r / comp.getLength();
+  float dr = r / comp.compLines.length;
   // choose a random base color
   color base = color(random(255), random(255), random(255));
   drawCircle(cx, cy, 2*r, base, 50 /*alpha*/);

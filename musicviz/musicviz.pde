@@ -13,9 +13,6 @@
  */
 import java.util.Map;
 
-int XSZ = 20; // width allocated for each note.
-int YSZ = 20; // height allocated for each note.
-
 /**
  * Class to represent a composition. 
  * Members include the file from which the notes are read, the number of beats and the lines 
@@ -28,7 +25,8 @@ class Composition {
 
   Composition(String compFileName, int numBeats) {
     this.compFileName = compFileName;
-    this.numBeats = numBeats;
+    // Multiply by 4 since there are typically 4 notes per beat in Carnatic music.
+    this.numBeats = numBeats * 4;
     parseComp();
   }
 
@@ -65,36 +63,18 @@ class Composition {
       compLines[l] = newLine;
     }
   }
-
-  // Returns the width of the canvas, depending on the number of beats.
-  int getWidth() {
-    // Multiply by 4 since there are typically 4 notes per beat in Carnatic music.
-    return numBeats * 4 * XSZ;
-  }
-
-  // Returns the height of the canvas, depending on the length of the composition.
-  int getHeight(float multiplier) {
-    YSZ = int(YSZ * multiplier);
-    return compLines.length * YSZ;
-  }
-
-  // Returns the length of the composition.
-  int getLength() {
-    return compLines.length;
-  }
 };
 
 Composition c;
 
 void setup() {
-  size(200, 200);
+  // use a fixed canvas size with 3:2 ratio so overlaying on digital images is easier.
+  // TODO: calculate based on composition size.
+  size(1200, 800);
   // load all the notes in the scale and store whatever state is necessary.
   loadNotes();
   background(0);
-  c = new Composition("kalyani1.txt", 14);
-  // resize the canvas depending on the composition.
-  surface.setResizable(true);
-  surface.setSize(c.getWidth(), c.getHeight(1.5));
+  c = new Composition("mohanavarnam1.txt", 8);
 }
 
 void draw() {

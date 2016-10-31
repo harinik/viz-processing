@@ -8,7 +8,7 @@
 */
 void renderCurves(Composition comp, float ystart, float yband) {
   background(0);
-  final float xband = width / (comp.numBeats * 4.0);
+  final float xband = width / comp.numBeats;
   float x = xband/2.0, y = 0;
 
   for (int l = 0; l < comp.compLines.length; l++) {

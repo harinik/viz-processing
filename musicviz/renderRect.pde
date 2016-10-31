@@ -10,10 +10,11 @@
 void renderRect(Composition comp, boolean withGradient) { 
   background(128);
   final int steps = 4;
-  int x = 0;
-  int y = 0;
+  float x = 0, y = 0;
   color base = color(255);
   color prevCol = 0;
+  float xstep = width / (float) comp.numBeats;
+  float ystep = height / (float) comp.compLines.length;
   for (int l = 0; l < comp.compLines.length; l++) {
     String[] cs = comp.compLines[l].split(" ");
     for (String c : cs) {
@@ -28,16 +29,16 @@ void renderRect(Composition comp, boolean withGradient) {
         for (int i = 0; i < steps; i++) {
           float t = map(i, 0, steps, 0.0, 1.0);
           color intCol = lerpColor(prevCol, col, t);
-          drawRect(x, y, (XSZ/steps), YSZ, intCol, 128);
+          drawRect(x, y, (xstep/steps), ystep, intCol, 128);
           prevCol = intCol;
-          x = x + (XSZ/steps);
+          x = x + (xstep/steps);
         }
       } else {
-        drawRect(x, y, XSZ, YSZ, col, 255);
-        x = x + XSZ;
+        drawRect(x, y, xstep, ystep, col, 255);
+        x = x + xstep;
       }
     }
     x = 0;
-    y = y + YSZ;
+    y = y + ystep;
   }
 }

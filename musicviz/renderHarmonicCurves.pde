@@ -6,7 +6,7 @@
 void renderHarmonicCurves(Composition comp) {
   background(255);
   // number of notes
-  final int nc = comp.compLines.length * comp.numBeats * 4;
+  final int nc = comp.compLines.length * comp.numBeats;
   // draw the curve first
   color base = color(random(255), random(255), random(255));
   stroke(color(255 - red(base), 255 - green(base), 255 - blue(base)));
@@ -58,9 +58,9 @@ void renderHarmonicCurves(Composition comp) {
 
 // Returns the x coord on the spiral correspond to the note number.
 float getX(int origX, int noteNum) {
-  return origX + 0.6 * noteNum * (height / (float) width) * sin(noteNum/8.0);
+  return origX + 0.8 * noteNum * (height / (float) width) * sin(noteNum/10.0);
 }
 // Returns the y coord on the spiral correspond to the note number.
 float getY(int origY, int noteNum) {
-  return origY + 0.4 * noteNum * (height / (float) width) * cos(noteNum/4.0);
+  return origY + 0.7 * noteNum * (height / (float) width) * cos(noteNum/10.0);
 }
