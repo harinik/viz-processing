@@ -8,6 +8,7 @@ void setup() {
   float a = PI/2;
   float inc = TWO_PI/25.0;
 
+  // generate the sine curve first
   noFill();
   strokeWeight(15);
   beginShape();
@@ -18,6 +19,7 @@ void setup() {
   }
   endShape();
 
+  // generate dots hugging the curve above and below
   fill(0);
   strokeWeight(1);
   a = PI/2;
