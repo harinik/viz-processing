@@ -7,7 +7,7 @@ void setup() {
   for (float theta = 0; theta < 2 * PI - (PI/4); theta += PI/4) {
     float startX = width/2;
     float startY = height/2;
-    strokeWeight(10);
+    stroke(255, 0, 0);
     noFill();
     float dist = 60;
     for (int i = 1; i < numPoints; i++) {

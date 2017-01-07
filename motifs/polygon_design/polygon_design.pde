@@ -15,8 +15,8 @@ void setup() {
   float startX = cx;
   float startY = cy;
 
-  fill(color(0, 0, 255));
-  noStroke();
+  stroke(255, 0, 0);
+  noFill();
   // Generate the polygons from inner to outer edge.
   // polygon reduce in size as we move away from the center.
   // increment by 2 since each polygon has 2 points on the same axis.
