@@ -9,7 +9,8 @@ void setup() {
   float cy = height/2;
   
   // draw diamonds along the regular x-y axes
-  fill(0);
+  noFill();
+  stroke(255, 0, 0);
   // center
   diamond(cx, cy, 10, 20);
   // along X and Y axes
@@ -36,5 +37,5 @@ void diamond(float x, float y, float xw, float yw) {
   vertex(x, y + yw);
   vertex(x + xw, y);
   vertex(x, y - yw);
-  endShape();
+  endShape(CLOSE);
 }
