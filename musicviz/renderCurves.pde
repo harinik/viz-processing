@@ -12,7 +12,7 @@ void renderCurves(Composition comp, float ystart, float yband) {
   float x = xband/2.0, y = 0;
 
   for (int l = 0; l < comp.compLines.length; l++) {
-    color col = color(random(255), random(255), random(255));
+   color col = color(random(255), random(255), random(255));
     String[] cs = comp.compLines[l].split(" ");
     noFill();
     beginShape();

@@ -6,6 +6,7 @@
 void renderRandomCurves(Composition comp) {
   background(255);
   drawRect(0, 0, width, height, 255, 255);
+  noFill();
   for (int l = 0; l < comp.compLines.length; l++) {
     beginShape();
     String[] notes = comp.compLines[l].split(" ");

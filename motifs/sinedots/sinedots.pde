@@ -35,8 +35,8 @@ void setup() {
   ellipseMode(CENTER);
   for (i = 10; i < 780; i=i+15) {
     y = 100+sin(a)*40.0;
-    ellipse(i, y-25, 12, 12);
-    ellipse(i, y+25, 12, 12);
+    ellipse(i, y-25, 10, 12);
+    ellipse(i, y+25, 10, 12);
     a += inc;
   }
 }

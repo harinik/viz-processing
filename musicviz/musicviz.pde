@@ -77,7 +77,7 @@ void setup() {
   // load all the notes in the scale and store whatever state is necessary.
   loadNotes();
   background(0);
-  c = new Composition("kalyani", "kalyani1.txt", 14);
+  c = new Composition("mohanam", "mohanavarnam1.txt", 8);
 }
 
 void draw() {
@@ -96,7 +96,7 @@ void keyPressed() {
     renderConcentricCircles(c);
     break;
   case 'u':
-    renderCurves(c, 0, height);
+    renderCurves(c, 0, height/c.compLines.length);
     break;
   case 'r':
     renderRect(c, false);
