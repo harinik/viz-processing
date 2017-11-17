@@ -76,8 +76,8 @@ void setup() {
   size(1200, 800);
   // load all the notes in the scale and store whatever state is necessary.
   loadNotes();
-  background(0);
-  c = new Composition("mohanam", "mohanavarnam1.txt", 8);
+ // background(0);
+  c = new Composition("geetham", "geetham1.txt", 3);
 }
 
 void draw() {

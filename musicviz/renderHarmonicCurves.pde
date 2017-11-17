@@ -14,7 +14,7 @@ void renderHarmonicCurves(Composition comp) {
   final int cx = width /2 ;
   final int cy = height / 2;
   noFill();
-  beginShape();
+ beginShape();
   while (l < nc + 1) {
     curveVertex(getX(cx, l), getY(cy, l));
     l++;
@@ -58,7 +58,7 @@ void renderHarmonicCurves(Composition comp) {
 
 // Returns the x coord on the spiral correspond to the note number.
 float getX(int origX, int noteNum) {
-  return origX + 0.5 * noteNum * (height / (float) width) * sin(noteNum/20.0);
+  return origX +  0.5 * noteNum * (height / (float) width) * sin(noteNum/10.0);
 }
 // Returns the y coord on the spiral correspond to the note number.
 float getY(int origY, int noteNum) {
